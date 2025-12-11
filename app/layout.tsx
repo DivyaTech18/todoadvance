@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import ChatbotWrapper from "./components/ChatbotWrapper";
 
 export const metadata: Metadata = {
   title: "Task Manager",
@@ -15,6 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <body style={{ margin: 0, padding: 0 }}>
         {children}
+        <ChatbotWrapper />
       </body>
     </html>
   );
